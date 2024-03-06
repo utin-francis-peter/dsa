@@ -54,7 +54,7 @@ Focusing on the RHS, create new range that starts from midPosition and stops at 
       return midPosition;
     }
 
-    // what happens when at the last item/position in the array?
+    // what happens when at the last item/position in the array? => that means either farLeftPosition === farRightPosition || vice-versa. In either case, the loop terminates
 
     if (key > sortedArray[midPosition]) {
       farLeftPosition = midPosition + 1;
